@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_category_localiza_root" model="product.category">
+        <field name="name">Localiza Bodega Operativa</field>
+    </record>
+    <record id="product_category_localiza_uniformes" model="product.category">
+        <field name="name">Uniformes</field>
+        <field name="parent_id" ref="product_category_localiza_root"/>
+    </record>
+    <record id="product_category_localiza_botas" model="product.category">
+        <field name="name">Botas</field>
+        <field name="parent_id" ref="product_category_localiza_root"/>
+    </record>
+    <record id="product_category_localiza_insumos" model="product.category">
+        <field name="name">Insumos Operativos</field>
+        <field name="parent_id" ref="product_category_localiza_root"/>
+    </record>
+    <record id="product_category_localiza_gps" model="product.category">
+        <field name="name">GPS / Equipos Seriados</field>
+        <field name="parent_id" ref="product_category_localiza_root"/>
+    </record>
+</odoo>

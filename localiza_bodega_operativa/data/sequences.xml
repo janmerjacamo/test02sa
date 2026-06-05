@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="seq_localiza_puesto" model="ir.sequence">
+        <field name="name">Localiza Puesto</field>
+        <field name="code">localiza.puesto</field>
+        <field name="prefix">PTO-%(y)s-</field>
+        <field name="padding">4</field>
+    </record>
+    <record id="seq_localiza_entrega" model="ir.sequence">
+        <field name="name">Localiza Entrega</field>
+        <field name="code">localiza.entrega</field>
+        <field name="prefix">ENT-%(y)s-</field>
+        <field name="padding">5</field>
+    </record>
+</odoo>

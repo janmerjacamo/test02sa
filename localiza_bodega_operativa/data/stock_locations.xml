@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="stock_location_localiza_root" model="stock.location">
+        <field name="name">Localiza</field>
+        <field name="usage">view</field>
+        <field name="location_id" ref="stock.stock_location_locations"/>
+    </record>
+    <record id="stock_location_localiza_puestos" model="stock.location">
+        <field name="name">Puestos</field>
+        <field name="usage">view</field>
+        <field name="location_id" ref="stock_location_localiza_root"/>
+    </record>
+    <record id="stock_location_localiza_entregados" model="stock.location">
+        <field name="name">Entregados sin puesto</field>
+        <field name="usage">internal</field>
+        <field name="location_id" ref="stock_location_localiza_root"/>
+    </record>
+</odoo>

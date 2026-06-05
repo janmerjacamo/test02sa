@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_localiza_root" name="Bodega Operativa" sequence="30" web_icon="stock,static/description/icon.png" groups="localiza_bodega_operativa.group_localiza_bodega_user"/>
+    <menuitem id="menu_localiza_dashboard" name="Tablero" parent="menu_localiza_root" action="action_localiza_dashboard" sequence="1"/>
+    <menuitem id="menu_localiza_operacion" name="Operación" parent="menu_localiza_root" sequence="10"/>
+    <menuitem id="menu_localiza_entregas" name="Entregas" parent="menu_localiza_operacion" action="action_localiza_entrega" sequence="10"/>
+    <menuitem id="menu_localiza_puestos" name="Puestos" parent="menu_localiza_operacion" action="action_localiza_puesto" sequence="20"/>
+    <menuitem id="menu_localiza_gps" name="GPS / Equipos" parent="menu_localiza_operacion" action="action_localiza_gps_equipo" sequence="30"/>
+    <menuitem id="menu_localiza_inventario" name="Inventario" parent="menu_localiza_root" sequence="20"/>
+    <menuitem id="menu_localiza_productos" name="Productos Operativos" parent="menu_localiza_inventario" action="stock.product_template_action_product" sequence="10"/>
+    <menuitem id="menu_localiza_lotes" name="Series / Lotes" parent="menu_localiza_inventario" action="stock.action_production_lot_form" sequence="20"/>
+    <menuitem id="menu_localiza_import" name="Importar Excel" parent="menu_localiza_root" action="action_localiza_import_wizard" sequence="90" groups="localiza_bodega_operativa.group_localiza_bodega_manager"/>
+</odoo>

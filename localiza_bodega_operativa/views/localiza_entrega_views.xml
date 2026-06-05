@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_localiza_entrega_list" model="ir.ui.view">
+        <field name="name">localiza.entrega.list</field>
+        <field name="model">localiza.entrega</field>
+        <field name="arch" type="xml">
+            <list string="Entregas" decoration-muted="state == 'cancel'" decoration-success="state == 'done'">
+                <field name="name"/>
+                <field name="date"/>
+                <field name="tipo"/>
+                <field name="receptor"/>
+                <field name="employee_id"/>
+                <field name="puesto_id"/>
+                <field name="picking_id"/>
+                <field name="state" widget="badge"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_localiza_entrega_form" model="ir.ui.view">
+        <field name="name">localiza.entrega.form</field>
+        <field name="model">localiza.entrega</field>
+        <field name="arch" type="xml">
+            <form string="Entrega operativa">
+                <header>
+                    <button name="action_confirm" type="object" string="Confirmar" class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_done" type="object" string="Validar entrega" class="btn-primary" invisible="state not in ('draft','confirmed')"/>
+                    <button name="action_cancel" type="object" string="Cancelar" invisible="state in ('done','cancel')"/>
+                    <field name="state" widget="statusbar" statusbar_visible="draft,confirmed,done"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_picking" type="object" class="oe_stat_button" icon="fa-exchange" invisible="not picking_id">
+                            <field name="picking_id" widget="statinfo" string="Transferencia"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name"/></h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="date"/>
+                            <field name="tipo"/>
+                            <field name="receptor"/>
+                            <field name="employee_id"/>
+                            <field name="partner_id"/>
+                        </group>
+                        <group>
+                            <field name="puesto_id"/>
+                            <field name="location_src_id"/>
+                            <field name="location_dest_id"/>
+                            <field name="picking_id" readonly="1"/>
+                        </group>
+                    </group>
+                    <field name="line_ids">
+                        <list editable="bottom">
+                            <field name="gps_equipo_id"/>
+                            <field name="product_id" required="1"/>
+                            <field name="talla"/>
+                            <field name="lot_id"/>
+                            <field name="qty"/>
+                            <field name="notes"/>
+                        </list>
+                    </field>
+                    <group>
+                        <field name="notes"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="action_localiza_entrega" model="ir.actions.act_window">
+        <field name="name">Entregas Operativas</field>
+        <field name="res_model">localiza.entrega</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

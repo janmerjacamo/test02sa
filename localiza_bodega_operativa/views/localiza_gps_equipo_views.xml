@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_localiza_gps_equipo_list" model="ir.ui.view">
+        <field name="name">localiza.gps.equipo.list</field>
+        <field name="model">localiza.gps.equipo</field>
+        <field name="arch" type="xml">
+            <list string="GPS" decoration-success="state == 'bodega'" decoration-info="state == 'instalado'" decoration-warning="state in ('danado','perdido')">
+                <field name="name"/>
+                <field name="modelo"/>
+                <field name="marca"/>
+                <field name="product_id"/>
+                <field name="placa"/>
+                <field name="cliente_id"/>
+                <field name="puesto_id"/>
+                <field name="state" widget="badge"/>
+            </list>
+        </field>
+    </record>
+    <record id="view_localiza_gps_equipo_form" model="ir.ui.view">
+        <field name="name">localiza.gps.equipo.form</field>
+        <field name="model">localiza.gps.equipo</field>
+        <field name="arch" type="xml">
+            <form string="Equipo GPS">
+                <header>
+                    <button name="action_mark_bodega" type="object" string="Marcar en bodega" invisible="state == 'bodega'"/>
+                    <button name="action_mark_installed" type="object" string="Marcar instalado" class="btn-primary" invisible="state == 'instalado'"/>
+                    <field name="state" widget="statusbar" statusbar_visible="bodega,asignado,instalado,retirado"/>
+                </header>
+                <sheet>
+                    <div class="oe_title">
+                        <label for="name"/>
+                        <h1><field name="name" placeholder="IMEI"/></h1>
+                    </div>
+                    <group>
+                        <group string="Producto">
+                            <field name="product_id"/>
+                            <field name="lot_id"/>
+                            <field name="modelo"/>
+                            <field name="marca"/>
+                            <field name="no_serie"/>
+                        </group>
+                        <group string="Compra / asignación">
+                            <field name="fecha_compra"/>
+                            <field name="proveedor_id"/>
+                            <field name="factura"/>
+                            <field name="costo"/>
+                            <field name="iva"/>
+                            <field name="cliente_id"/>
+                            <field name="placa"/>
+                            <field name="puesto_id"/>
+                        </group>
+                    </group>
+                    <field name="notes" placeholder="Observaciones del equipo..."/>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+    <record id="action_localiza_gps_equipo" model="ir.actions.act_window">
+        <field name="name">GPS / Equipos</field>
+        <field name="res_model">localiza.gps.equipo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+</odoo>

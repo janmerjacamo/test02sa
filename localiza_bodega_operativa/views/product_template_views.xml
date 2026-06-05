@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_product_template_form_localiza" model="ir.ui.view">
+        <field name="name">product.template.form.localiza.bodega</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Localiza Bodega">
+                    <group>
+                        <group>
+                            <field name="x_localiza_tipo_operativo"/>
+                            <field name="x_localiza_criticidad"/>
+                            <field name="x_localiza_stock_minimo"/>
+                            <field name="x_localiza_requiere_puesto"/>
+                        </group>
+                        <group>
+                            <field name="tracking"/>
+                            <field name="default_code"/>
+                            <field name="categ_id"/>
+                        </group>
+                    </group>
+                    <field name="x_localiza_notas_operativas" placeholder="Notas internas para bodega, entrega o control operativo..."/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
