@@ -1,0 +1,41 @@
+# -*- coding: utf-8 -*-
+from odoo import models, fields, api
+
+
+class LocalizaExtProduct_product(models.Model):
+    _inherit = "product.product"
+
+    nuevo_texto = fields.Char(string="Nuevo Texto")
+    new_texto = fields.Char(string="New Texto")
+    new_texto_2 = fields.Char(string="New Texto")
+    new_texto_3 = fields.Char(string="New Texto")
+    new_texto_4 = fields.Char(string="New Texto")
+    new_texto_5 = fields.Char(string="New Texto")
+    new_texto_6 = fields.Char(string="New Texto")
+    compania_telefonica = fields.Char(string="Compañía Telefónica:", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    new_fecha = fields.Date(string="New Fecha")
+    new_fecha_2 = fields.Date(string="New Fecha")
+    new_fecha_y_hora = fields.Datetime(string="New Fecha y hora ")
+    new_fecha_y_hora_2 = fields.Datetime(string="New Fecha y hora ")
+    new_fecha_y_hora_3 = fields.Datetime(string="New Fecha y hora ")
+    fecha_y_hora_de_registro = fields.Datetime(string="Fecha y hora  de  Registro:")
+    fecha_hora_de_registro = fields.Datetime(string="FECHA/HORA DE REGISTRO:")
+    fecha_hora_de_registro_2 = fields.Datetime(string="FECHA/HORA DE REGISTRO:")
+    fin_contrato = fields.Date(string="FIN / CONTRATO:")
+    icc_actual = fields.Char(string="ICC-ACTUAL:")
+    imei_de_equipo = fields.Char(string="IMEI de Equipo:")
+    inicio_contrato = fields.Date(string="INICIO / CONTRATO:")
+    linea = fields.Char(string="LINEA")
+    lote_de_orden_compra = fields.Char(string="Lote de Orden / Compra:")
+    lote_de_orden_compra_2 = fields.Char(string="Lote de Orden / Compra:")
+    lote_de_orden_compra_3 = fields.Char(string="Lote de Orden / Compra:")
+    nuevo_many2one = fields.Many2one("localiza.catalogo.marca", string="Nuevo Many2One", ondelete="set null")
+    marca = fields.Many2one("localiza.catalogo.marca", string="MARCA", ondelete="set null")
+    marcas = fields.Char(string="MARCAS:", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    modelos = fields.Char(string="MODELOS: ", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    plan_de_datos = fields.Char(string="PLAN DE DATOS: ", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    ruta_historica_apps = fields.Char(string="Ruta histórica apps ")
+    new_seleccion = fields.Char(string="New Selección", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    new_seleccion_2 = fields.Char(string="New Selección", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    new_seleccion_3 = fields.Char(string="New Selección", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")
+    new_seleccion_4 = fields.Char(string="New Selección", help="Campo convertido desde selección de Studio; revisar opciones originales antes de producción.")

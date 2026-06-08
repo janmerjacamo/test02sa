@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_localiza_gps_asignacion_list" model="ir.ui.view">
+        <field name="name">localiza.gps.asignacion.list</field>
+        <field name="model">localiza.gps.asignacion</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="compania_telefonica"/>
+                <field name="e"/>
+                <field name="esta_asignada_a_un_equipo"/>
+                <field name="habilitado"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_gps_asignacion_form" model="ir.ui.view">
+        <field name="name">localiza.gps.asignacion.form</field>
+        <field name="model">localiza.gps.asignacion</field>
+        <field name="arch" type="xml">
+            <form string="Asignaciones GPS">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="compania_telefonica"/>
+                            <field name="e"/>
+                            <field name="esta_asignada_a_un_equipo"/>
+                            <field name="habilitado"/>
+                            <field name="estado_de_la_sim"/>
+                            <field name="fecha_y_hora_de_migracion"/>
+                            <field name="fecha_hora_de_registro"/>
+                            <field name="linea_asignada"/>
+                            <field name="lote"/>
+                            <field name="many2one_field_ghx2n"/>
+                            <field name="registros_lineas"/>
+                            <field name="notas"/>
+                            <field name="new_campo_relacionado"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_gps_asignacion" model="ir.actions.act_window">
+        <field name="name">Asignaciones GPS</field>
+        <field name="res_model">localiza.gps.asignacion</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_asignado_list" model="ir.ui.view">
+        <field name="name">localiza.asignado.list</field>
+        <field name="model">localiza.asignado</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_asignado_form" model="ir.ui.view">
+        <field name="name">localiza.asignado.form</field>
+        <field name="model">localiza.asignado</field>
+        <field name="arch" type="xml">
+            <form string="Asignados">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_asignado" model="ir.actions.act_window">
+        <field name="name">Asignados</field>
+        <field name="res_model">localiza.asignado</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_cinta_list" model="ir.ui.view">
+        <field name="name">localiza.activo.cinta.list</field>
+        <field name="model">localiza.activo.cinta</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="fecha"/>
+                <field name="fecha_de_entrega"/>
+                <field name="sequence"/>
+                <field name="etiquetas"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_cinta_form" model="ir.ui.view">
+        <field name="name">localiza.activo.cinta.form</field>
+        <field name="model">localiza.activo.cinta</field>
+        <field name="arch" type="xml">
+            <form string="Cintas">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="fecha"/>
+                            <field name="fecha_de_entrega"/>
+                            <field name="sequence"/>
+                            <field name="etiquetas"/>
+                            <field name="tecnico"/>
+                            <field name="tipo_cinta"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo_cinta" model="ir.actions.act_window">
+        <field name="name">Cintas</field>
+        <field name="res_model">localiza.activo.cinta</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_telefonia_compania_list" model="ir.ui.view">
+        <field name="name">localiza.telefonia.compania.list</field>
+        <field name="model">localiza.telefonia.compania</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_telefonia_compania_form" model="ir.ui.view">
+        <field name="name">localiza.telefonia.compania.form</field>
+        <field name="model">localiza.telefonia.compania</field>
+        <field name="arch" type="xml">
+            <form string="Compañía Telefónica">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_telefonia_compania" model="ir.actions.act_window">
+        <field name="name">Compañía Telefónica</field>
+        <field name="res_model">localiza.telefonia.compania</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_desmonte_list" model="ir.ui.view">
+        <field name="name">localiza.activo.desmonte.list</field>
+        <field name="model">localiza.activo.desmonte</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="apagado"/>
+                <field name="boleta"/>
+                <field name="cliente"/>
+                <field name="cliente_2"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_desmonte_form" model="ir.ui.view">
+        <field name="name">localiza.activo.desmonte.form</field>
+        <field name="model">localiza.activo.desmonte</field>
+        <field name="arch" type="xml">
+            <form string="Desmontes">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="apagado"/>
+                            <field name="boleta"/>
+                            <field name="cliente"/>
+                            <field name="cliente_2"/>
+                            <field name="fecha"/>
+                            <field name="fecha_e"/>
+                            <field name="imei"/>
+                            <field name="modelo"/>
+                            <field name="motivo"/>
+                            <field name="placa"/>
+                            <field name="resultado"/>
+                            <field name="sequence"/>
+                            <field name="sim_numero"/>
+                            <field name="tecnico"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo_desmonte" model="ir.actions.act_window">
+        <field name="name">Desmontes</field>
+        <field name="res_model">localiza.activo.desmonte</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_equipo_instalar_list" model="ir.ui.view">
+        <field name="name">localiza.activo.equipo.instalar.list</field>
+        <field name="model">localiza.activo.equipo.instalar</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_equipo_instalar_form" model="ir.ui.view">
+        <field name="name">localiza.activo.equipo.instalar.form</field>
+        <field name="model">localiza.activo.equipo.instalar</field>
+        <field name="arch" type="xml">
+            <form string="Equipo a Instalar">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo_equipo_instalar" model="ir.actions.act_window">
+        <field name="name">Equipo a Instalar</field>
+        <field name="res_model">localiza.activo.equipo.instalar</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_list" model="ir.ui.view">
+        <field name="name">localiza.activo.list</field>
+        <field name="model">localiza.activo</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="lineas_nuevas"/>
+                <field name="antena_gps"/>
+                <field name="ano"/>
+                <field name="apagado_de_motor"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_form" model="ir.ui.view">
+        <field name="name">localiza.activo.form</field>
+        <field name="model">localiza.activo</field>
+        <field name="arch" type="xml">
+            <form string="GESTION DE ACTIVOS">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="lineas_nuevas"/>
+                            <field name="name"/>
+                            <field name="antena_gps"/>
+                            <field name="ano"/>
+                            <field name="apagado_de_motor"/>
+                            <field name="avl"/>
+                            <field name="bateria_de_respaldo"/>
+                            <field name="bateria_extra"/>
+                            <field name="new_casilla_de_verificacion"/>
+                            <field name="boton_de_panico"/>
+                            <field name="boton_de_panico_2"/>
+                            <field name="chasis"/>
+                            <field name="cliente_transportista"/>
+                            <field name="color"/>
+                            <field name="desconexion"/>
+                            <field name="fecha_hora"/>
+                            <field name="imagen"/>
+                            <field name="lugar_de_trabajo"/>
+                            <field name="magnetico"/>
+                            <field name="modelos"/>
+                            <field name="modelos_de_equipos"/>
+                            <field name="marcas_de_equipos"/>
+                            <field name="microfono"/>
+                            <field name="multimedia_1"/>
+                            <field name="multimedia_2"/>
+                            <field name="no_se_coloca_apagado"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo" model="ir.actions.act_window">
+        <field name="name">GESTION DE ACTIVOS</field>
+        <field name="res_model">localiza.activo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_telefonia_linea_list" model="ir.ui.view">
+        <field name="name">localiza.telefonia.linea.list</field>
+        <field name="model">localiza.telefonia.linea</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="currency"/>
+                <field name="asignada_equipo"/>
+                <field name="asignada_equipo_2"/>
+                <field name="new_texto"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_telefonia_linea_form" model="ir.ui.view">
+        <field name="name">localiza.telefonia.linea.form</field>
+        <field name="model">localiza.telefonia.linea</field>
+        <field name="arch" type="xml">
+            <form string="GESTION DE LINEAS">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="currency"/>
+                            <field name="name"/>
+                            <field name="asignada_equipo"/>
+                            <field name="asignada_equipo_2"/>
+                            <field name="new_texto"/>
+                            <field name="costo_q"/>
+                            <field name="new_fecha_y_hora"/>
+                            <field name="new_fecha_y_hora_2"/>
+                            <field name="esta_asignada_a_una_sim_plastica"/>
+                            <field name="esta_asignada_a_una_sim_plastica_2"/>
+                            <field name="fin_de_contrato"/>
+                            <field name="fin_de_contrato_2"/>
+                            <field name="inicio_de_contrato"/>
+                            <field name="numero_de_lineas"/>
+                            <field name="numero_de_lineas_2"/>
+                            <field name="numero_de_lineas_3"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_telefonia_linea" model="ir.actions.act_window">
+        <field name="name">GESTION DE LINEAS</field>
+        <field name="res_model">localiza.telefonia.linea</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_linea_list" model="ir.ui.view">
+        <field name="name">localiza.activo.linea.list</field>
+        <field name="model">localiza.activo.linea</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_linea_form" model="ir.ui.view">
+        <field name="name">localiza.activo.linea.form</field>
+        <field name="model">localiza.activo.linea</field>
+        <field name="arch" type="xml">
+            <form string="Linea del Activo">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo_linea" model="ir.actions.act_window">
+        <field name="name">Linea del Activo</field>
+        <field name="res_model">localiza.activo.linea</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_catalogo_marca_list" model="ir.ui.view">
+        <field name="name">localiza.catalogo.marca.list</field>
+        <field name="model">localiza.catalogo.marca</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_catalogo_marca_form" model="ir.ui.view">
+        <field name="name">localiza.catalogo.marca.form</field>
+        <field name="model">localiza.catalogo.marca</field>
+        <field name="arch" type="xml">
+            <form string="Marca">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_catalogo_marca" model="ir.actions.act_window">
+        <field name="name">Marca</field>
+        <field name="res_model">localiza.catalogo.marca</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_modelo_list" model="ir.ui.view">
+        <field name="name">localiza.activo.modelo.list</field>
+        <field name="model">localiza.activo.modelo</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_modelo_form" model="ir.ui.view">
+        <field name="name">localiza.activo.modelo.form</field>
+        <field name="model">localiza.activo.modelo</field>
+        <field name="arch" type="xml">
+            <form string="Modelo de activo">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo_modelo" model="ir.actions.act_window">
+        <field name="name">Modelo de activo</field>
+        <field name="res_model">localiza.activo.modelo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_equipo_modelo_list" model="ir.ui.view">
+        <field name="name">localiza.equipo.modelo.list</field>
+        <field name="model">localiza.equipo.modelo</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_equipo_modelo_form" model="ir.ui.view">
+        <field name="name">localiza.equipo.modelo.form</field>
+        <field name="model">localiza.equipo.modelo</field>
+        <field name="arch" type="xml">
+            <form string="Modelos de Equipos">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_equipo_modelo" model="ir.actions.act_window">
+        <field name="name">Modelos de Equipos</field>
+        <field name="res_model">localiza.equipo.modelo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_telefonia_plan_datos_list" model="ir.ui.view">
+        <field name="name">localiza.telefonia.plan.datos.list</field>
+        <field name="model">localiza.telefonia.plan.datos</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="moneda"/>
+                <field name="sequence"/>
+                <field name="costo"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_telefonia_plan_datos_form" model="ir.ui.view">
+        <field name="name">localiza.telefonia.plan.datos.form</field>
+        <field name="model">localiza.telefonia.plan.datos</field>
+        <field name="arch" type="xml">
+            <form string="Plan de Datos">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="moneda"/>
+                            <field name="sequence"/>
+                            <field name="costo"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_telefonia_plan_datos" model="ir.actions.act_window">
+        <field name="name">Plan de Datos</field>
+        <field name="res_model">localiza.telefonia.plan.datos</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_telefonia_registro_linea_list" model="ir.ui.view">
+        <field name="name">localiza.telefonia.registro.linea.list</field>
+        <field name="model">localiza.telefonia.registro.linea</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="asignada_equipo"/>
+                <field name="new_casilla_de_verificacion"/>
+                <field name="esta_asignada_a_una_sim_plastica"/>
+                <field name="plan_de_datos"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_telefonia_registro_linea_form" model="ir.ui.view">
+        <field name="name">localiza.telefonia.registro.linea.form</field>
+        <field name="model">localiza.telefonia.registro.linea</field>
+        <field name="arch" type="xml">
+            <form string="Registros LINEAS">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="asignada_equipo"/>
+                            <field name="new_casilla_de_verificacion"/>
+                            <field name="esta_asignada_a_una_sim_plastica"/>
+                            <field name="plan_de_datos"/>
+                            <field name="moneda"/>
+                            <field name="new_fecha_y_hora"/>
+                            <field name="esta"/>
+                            <field name="esta_asignada_a_un_equipo"/>
+                            <field name="estado_en_equipos"/>
+                            <field name="fecha"/>
+                            <field name="fecha_de_registro_de_la_linea"/>
+                            <field name="fin_de_contrato"/>
+                            <field name="icc_actual"/>
+                            <field name="inicio_de_contrato"/>
+                            <field name="inicio_de_contrato_2"/>
+                            <field name="lote_migrado"/>
+                            <field name="asignados"/>
+                            <field name="plan_de_datos_2"/>
+                            <field name="compania_telefonica"/>
+                            <field name="lineas_nuevas"/>
+                            <field name="sequence"/>
+                            <field name="responsable"/>
+                            <field name="costo_q"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_telefonia_registro_linea" model="ir.actions.act_window">
+        <field name="name">Registros LINEAS</field>
+        <field name="res_model">localiza.telefonia.registro.linea</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_equipo_registro_list" model="ir.ui.view">
+        <field name="name">localiza.equipo.registro.list</field>
+        <field name="model">localiza.equipo.registro</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="color"/>
+                <field name="currency"/>
+                <field name="moneda"/>
+                <field name="fecha_de_compra"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_equipo_registro_form" model="ir.ui.view">
+        <field name="name">localiza.equipo.registro.form</field>
+        <field name="model">localiza.equipo.registro</field>
+        <field name="arch" type="xml">
+            <form string="Registros de Equipos">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="color"/>
+                            <field name="currency"/>
+                            <field name="name"/>
+                            <field name="moneda"/>
+                            <field name="fecha_de_compra"/>
+                            <field name="iva"/>
+                            <field name="estado_de_kanban"/>
+                            <field name="modelo"/>
+                            <field name="marca"/>
+                            <field name="moneda_2"/>
+                            <field name="no_factura"/>
+                            <field name="no_serie"/>
+                            <field name="notas"/>
+                            <field name="alta_prioridad"/>
+                            <field name="proveedor"/>
+                            <field name="sequence"/>
+                            <field name="sim"/>
+                            <field name="etapa"/>
+                            <field name="valor"/>
+                            <field name="imei_count"/>
+                            <field name="registros_de_equipos_count"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_equipo_registro" model="ir.actions.act_window">
+        <field name="name">Registros de Equipos</field>
+        <field name="res_model">localiza.equipo.registro</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_telefonia_sim_list" model="ir.ui.view">
+        <field name="name">localiza.telefonia.sim.list</field>
+        <field name="model">localiza.telefonia.sim</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="actualizar_estados"/>
+                <field name="lote"/>
+                <field name="compania_telefonica"/>
+                <field name="estado_de_la_sim"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_telefonia_sim_form" model="ir.ui.view">
+        <field name="name">localiza.telefonia.sim.form</field>
+        <field name="model">localiza.telefonia.sim</field>
+        <field name="arch" type="xml">
+            <form string="SIM Registro">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="actualizar_estados"/>
+                            <field name="lote"/>
+                            <field name="compania_telefonica"/>
+                            <field name="estado_de_la_sim"/>
+                            <field name="fecha_y_hora_de_migracion"/>
+                            <field name="fecha_hora_de_registro"/>
+                            <field name="habilitado"/>
+                            <field name="linea"/>
+                            <field name="linea_2"/>
+                            <field name="registros_lineas"/>
+                            <field name="gestion_de_lineas"/>
+                            <field name="companias"/>
+                            <field name="observaciones"/>
+                            <field name="sequence"/>
+                            <field name="responsable"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_telefonia_sim" model="ir.actions.act_window">
+        <field name="name">SIM Registro</field>
+        <field name="res_model">localiza.telefonia.sim</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_senuelo_list" model="ir.ui.view">
+        <field name="name">localiza.activo.senuelo.list</field>
+        <field name="model">localiza.activo.senuelo</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="avatar"/>
+                <field name="moneda"/>
+                <field name="marca"/>
+                <field name="modelo"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_senuelo_form" model="ir.ui.view">
+        <field name="name">localiza.activo.senuelo.form</field>
+        <field name="model">localiza.activo.senuelo</field>
+        <field name="arch" type="xml">
+            <form string="Señuelos">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="avatar"/>
+                            <field name="name"/>
+                            <field name="moneda"/>
+                            <field name="marca"/>
+                            <field name="modelo"/>
+                            <field name="sequence"/>
+                            <field name="valor"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo_senuelo" model="ir.actions.act_window">
+        <field name="name">Señuelos</field>
+        <field name="res_model">localiza.activo.senuelo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_tipo_cinta_list" model="ir.ui.view">
+        <field name="name">localiza.activo.tipo.cinta.list</field>
+        <field name="model">localiza.activo.tipo.cinta</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_tipo_cinta_form" model="ir.ui.view">
+        <field name="name">localiza.activo.tipo.cinta.form</field>
+        <field name="model">localiza.activo.tipo.cinta</field>
+        <field name="arch" type="xml">
+            <form string="Tipo de Cintas">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo_tipo_cinta" model="ir.actions.act_window">
+        <field name="name">Tipo de Cintas</field>
+        <field name="res_model">localiza.activo.tipo.cinta</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_servicio_tipo_list" model="ir.ui.view">
+        <field name="name">localiza.servicio.tipo.list</field>
+        <field name="model">localiza.servicio.tipo</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="has_message"/>
+                <field name="sms_delivery_error"/>
+                <field name="ratings"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_servicio_tipo_form" model="ir.ui.view">
+        <field name="name">localiza.servicio.tipo.form</field>
+        <field name="model">localiza.servicio.tipo</field>
+        <field name="arch" type="xml">
+            <form string="Tipo de Servicios">
+                <sheet>
+                    <group>
+                            <field name="has_message"/>
+                            <field name="sms_delivery_error"/>
+                            <field name="ratings"/>
+                            <field name="active"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_servicio_tipo" model="ir.actions.act_window">
+        <field name="name">Tipo de Servicios</field>
+        <field name="res_model">localiza.servicio.tipo</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_cinta_tag_list" model="ir.ui.view">
+        <field name="name">localiza.activo.cinta.tag.list</field>
+        <field name="model">localiza.activo.cinta.tag</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="color"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_cinta_tag_form" model="ir.ui.view">
+        <field name="name">localiza.activo.cinta.tag.form</field>
+        <field name="model">localiza.activo.cinta.tag</field>
+        <field name="arch" type="xml">
+            <form string="Cintas Tags">
+                <sheet>
+                    <group>
+                            <field name="color"/>
+                            <field name="name"/>
+                            <field name="active"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo_cinta_tag" model="ir.actions.act_window">
+        <field name="name">Cintas Tags</field>
+        <field name="res_model">localiza.activo.cinta.tag</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_equipo_registro_stage_list" model="ir.ui.view">
+        <field name="name">localiza.equipo.registro.stage.list</field>
+        <field name="model">localiza.equipo.registro.stage</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_equipo_registro_stage_form" model="ir.ui.view">
+        <field name="name">localiza.equipo.registro.stage.form</field>
+        <field name="model">localiza.equipo.registro.stage</field>
+        <field name="arch" type="xml">
+            <form string="Registros de Equipos Stages">
+                <sheet>
+                    <group>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_equipo_registro_stage" model="ir.actions.act_window">
+        <field name="name">Registros de Equipos Stages</field>
+        <field name="res_model">localiza.equipo.registro.stage</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_activo_line_list" model="ir.ui.view">
+        <field name="name">localiza.activo.line.list</field>
+        <field name="model">localiza.activo.line</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="x_gestion_de_activos"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_activo_line_form" model="ir.ui.view">
+        <field name="name">localiza.activo.line.form</field>
+        <field name="model">localiza.activo.line</field>
+        <field name="arch" type="xml">
+            <form string="gestion_de_activos_line">
+                <sheet>
+                    <group>
+                            <field name="x_gestion_de_activos"/>
+                            <field name="name"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_activo_line" model="ir.actions.act_window">
+        <field name="name">gestion_de_activos_line</field>
+        <field name="res_model">localiza.activo.line</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_equipo_marca_list" model="ir.ui.view">
+        <field name="name">localiza.equipo.marca.list</field>
+        <field name="model">localiza.equipo.marca</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_equipo_marca_form" model="ir.ui.view">
+        <field name="name">localiza.equipo.marca.form</field>
+        <field name="model">localiza.equipo.marca</field>
+        <field name="arch" type="xml">
+            <form string="marcas de equipos">
+                <sheet>
+                    <group>
+                            <field name="name"/>
+                            <field name="active"/>
+                            <field name="sequence"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_equipo_marca" model="ir.actions.act_window">
+        <field name="name">marcas de equipos</field>
+        <field name="res_model">localiza.equipo.marca</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+
+    <record id="view_localiza_telefonia_registro_linea_detalle_list" model="ir.ui.view">
+        <field name="name">localiza.telefonia.registro.linea.detalle.list</field>
+        <field name="model">localiza.telefonia.registro.linea.detalle</field>
+        <field name="arch" type="xml">
+            <list>
+                <field name="name"/>
+                <field name="x_registros"/>
+                <field name="fecha_y_hora_de_migracion"/>
+                <field name="sequence"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_localiza_telefonia_registro_linea_detalle_form" model="ir.ui.view">
+        <field name="name">localiza.telefonia.registro.linea.detalle.form</field>
+        <field name="model">localiza.telefonia.registro.linea.detalle</field>
+        <field name="arch" type="xml">
+            <form string="registros_line">
+                <sheet>
+                    <group>
+                            <field name="name"/>
+                            <field name="x_registros"/>
+                            <field name="fecha_y_hora_de_migracion"/>
+                            <field name="sequence"/>
+                            <field name="active"/>
+                    </group>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_localiza_telefonia_registro_linea_detalle" model="ir.actions.act_window">
+        <field name="name">registros_line</field>
+        <field name="res_model">localiza.telefonia.registro.linea.detalle</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+</odoo>

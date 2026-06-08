@@ -1,0 +1,25 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_localiza_gps_asignacion_user,Asignaciones GPS,model_localiza_gps_asignacion,base.group_user,1,1,1,1
+access_localiza_asignado_user,Asignados,model_localiza_asignado,base.group_user,1,1,1,1
+access_localiza_activo_cinta_user,Cintas,model_localiza_activo_cinta,base.group_user,1,1,1,1
+access_localiza_telefonia_compania_user,Compañía Telefónica,model_localiza_telefonia_compania,base.group_user,1,1,1,1
+access_localiza_activo_desmonte_user,Desmontes,model_localiza_activo_desmonte,base.group_user,1,1,1,1
+access_localiza_activo_equipo_instalar_user,Equipo a Instalar,model_localiza_activo_equipo_instalar,base.group_user,1,1,1,1
+access_localiza_activo_user,GESTION DE ACTIVOS,model_localiza_activo,base.group_user,1,1,1,1
+access_localiza_telefonia_linea_user,GESTION DE LINEAS,model_localiza_telefonia_linea,base.group_user,1,1,1,1
+access_localiza_activo_linea_user,Linea del Activo,model_localiza_activo_linea,base.group_user,1,1,1,1
+access_localiza_catalogo_marca_user,Marca,model_localiza_catalogo_marca,base.group_user,1,1,1,1
+access_localiza_activo_modelo_user,Modelo de activo,model_localiza_activo_modelo,base.group_user,1,1,1,1
+access_localiza_equipo_modelo_user,Modelos de Equipos,model_localiza_equipo_modelo,base.group_user,1,1,1,1
+access_localiza_telefonia_plan_datos_user,Plan de Datos,model_localiza_telefonia_plan_datos,base.group_user,1,1,1,1
+access_localiza_telefonia_registro_linea_user,Registros LINEAS,model_localiza_telefonia_registro_linea,base.group_user,1,1,1,1
+access_localiza_equipo_registro_user,Registros de Equipos,model_localiza_equipo_registro,base.group_user,1,1,1,1
+access_localiza_telefonia_sim_user,SIM Registro,model_localiza_telefonia_sim,base.group_user,1,1,1,1
+access_localiza_activo_senuelo_user,Señuelos,model_localiza_activo_senuelo,base.group_user,1,1,1,1
+access_localiza_activo_tipo_cinta_user,Tipo de Cintas,model_localiza_activo_tipo_cinta,base.group_user,1,1,1,1
+access_localiza_servicio_tipo_user,Tipo de Servicios,model_localiza_servicio_tipo,base.group_user,1,1,1,1
+access_localiza_activo_cinta_tag_user,Cintas Tags,model_localiza_activo_cinta_tag,base.group_user,1,1,1,1
+access_localiza_equipo_registro_stage_user,Registros de Equipos Stages,model_localiza_equipo_registro_stage,base.group_user,1,1,1,1
+access_localiza_activo_line_user,gestion_de_activos_line,model_localiza_activo_line,base.group_user,1,1,1,1
+access_localiza_equipo_marca_user,marcas de equipos,model_localiza_equipo_marca,base.group_user,1,1,1,1
+access_localiza_telefonia_registro_linea_detalle_user,registros_line,model_localiza_telefonia_registro_linea_detalle,base.group_user,1,1,1,1

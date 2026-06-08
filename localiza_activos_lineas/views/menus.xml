@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_localiza_activos_lineas_root" name="Localiza Activos y Líneas" sequence="10"/>
+    <menuitem id="menu_localiza_gps_asignacion" name="Asignaciones GPS" parent="menu_localiza_activos_lineas_root" action="action_localiza_gps_asignacion" sequence="10"/>
+    <menuitem id="menu_localiza_asignado" name="Asignados" parent="menu_localiza_activos_lineas_root" action="action_localiza_asignado" sequence="20"/>
+    <menuitem id="menu_localiza_activo_cinta" name="Cintas" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo_cinta" sequence="30"/>
+    <menuitem id="menu_localiza_telefonia_compania" name="Compañía Telefónica" parent="menu_localiza_activos_lineas_root" action="action_localiza_telefonia_compania" sequence="40"/>
+    <menuitem id="menu_localiza_activo_desmonte" name="Desmontes" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo_desmonte" sequence="50"/>
+    <menuitem id="menu_localiza_activo_equipo_instalar" name="Equipo a Instalar" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo_equipo_instalar" sequence="60"/>
+    <menuitem id="menu_localiza_activo" name="GESTION DE ACTIVOS" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo" sequence="70"/>
+    <menuitem id="menu_localiza_telefonia_linea" name="GESTION DE LINEAS" parent="menu_localiza_activos_lineas_root" action="action_localiza_telefonia_linea" sequence="80"/>
+    <menuitem id="menu_localiza_activo_linea" name="Linea del Activo" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo_linea" sequence="90"/>
+    <menuitem id="menu_localiza_catalogo_marca" name="Marca" parent="menu_localiza_activos_lineas_root" action="action_localiza_catalogo_marca" sequence="100"/>
+    <menuitem id="menu_localiza_activo_modelo" name="Modelo de activo" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo_modelo" sequence="110"/>
+    <menuitem id="menu_localiza_equipo_modelo" name="Modelos de Equipos" parent="menu_localiza_activos_lineas_root" action="action_localiza_equipo_modelo" sequence="120"/>
+    <menuitem id="menu_localiza_telefonia_plan_datos" name="Plan de Datos" parent="menu_localiza_activos_lineas_root" action="action_localiza_telefonia_plan_datos" sequence="130"/>
+    <menuitem id="menu_localiza_telefonia_registro_linea" name="Registros LINEAS" parent="menu_localiza_activos_lineas_root" action="action_localiza_telefonia_registro_linea" sequence="140"/>
+    <menuitem id="menu_localiza_equipo_registro" name="Registros de Equipos" parent="menu_localiza_activos_lineas_root" action="action_localiza_equipo_registro" sequence="150"/>
+    <menuitem id="menu_localiza_telefonia_sim" name="SIM Registro" parent="menu_localiza_activos_lineas_root" action="action_localiza_telefonia_sim" sequence="160"/>
+    <menuitem id="menu_localiza_activo_senuelo" name="Señuelos" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo_senuelo" sequence="170"/>
+    <menuitem id="menu_localiza_activo_tipo_cinta" name="Tipo de Cintas" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo_tipo_cinta" sequence="180"/>
+    <menuitem id="menu_localiza_servicio_tipo" name="Tipo de Servicios" parent="menu_localiza_activos_lineas_root" action="action_localiza_servicio_tipo" sequence="190"/>
+    <menuitem id="menu_localiza_activo_cinta_tag" name="Cintas Tags" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo_cinta_tag" sequence="200"/>
+    <menuitem id="menu_localiza_equipo_registro_stage" name="Registros de Equipos Stages" parent="menu_localiza_activos_lineas_root" action="action_localiza_equipo_registro_stage" sequence="210"/>
+    <menuitem id="menu_localiza_activo_line" name="gestion_de_activos_line" parent="menu_localiza_activos_lineas_root" action="action_localiza_activo_line" sequence="220"/>
+    <menuitem id="menu_localiza_equipo_marca" name="marcas de equipos" parent="menu_localiza_activos_lineas_root" action="action_localiza_equipo_marca" sequence="230"/>
+    <menuitem id="menu_localiza_telefonia_registro_linea_detalle" name="registros_line" parent="menu_localiza_activos_lineas_root" action="action_localiza_telefonia_registro_linea_detalle" sequence="240"/>
+</odoo>
