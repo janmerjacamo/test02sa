@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <menuitem id="menu_localiza_studio_core_root" name="Localiza Configuración" sequence="10"/>
+</odoo>
