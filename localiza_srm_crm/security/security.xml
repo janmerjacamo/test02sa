@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Odoo 19: sin grupos personalizados por ahora; acceso para usuarios internos mediante base.group_user -->
+</odoo>
